@@ -1,0 +1,7 @@
+{
+  "name": "asb2020",
+  "version": "1.0.0",
+  "dependencies": {
+    "reveal.js": "latest"
+  }
+}
