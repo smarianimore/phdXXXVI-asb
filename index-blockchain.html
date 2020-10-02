@@ -42,6 +42,8 @@
                 <li class="fragment"> Why </li>
                 <li class="fragment"> What </li>
                 <li class="fragment"> How </li>
+                <li class="fragment"> Deep dive: Ethereum </li>
+                <li class="fragment"> Deep dive: smart contracts </li>
                 <li class="fragment"> Autonomy, too? </li>
             </ol>
 
@@ -197,15 +199,22 @@
                 <p style="text-align: right; float: right;">
                     Cryptographic tool to guarantee:</p>
                 <ul>
-                <small><li class="fragment"> integrity = info uncompromised </li>
-                <li class="fragment"> authenticity = info comes from that user </li></small>
+                    <small><li class="fragment"> integrity = info uncompromised </li>
+                        <li class="fragment"> authenticity = info comes from that user </li></small>
                 </ul>
-                    <span class="fragment"> <a href="https://andersbrownworth.com/blockchain/public-private-keys/transaction">Asymmetric, private + public key infrastructure</a> </span>
+                <span class="fragment"> <a href="https://andersbrownworth.com/blockchain/public-private-keys/transaction">Asymmetric, private + public key infrastructure</a> </span>
                 <ul>
-                <small><li class="fragment"> data hashed by user $U$ with private key $K$ </li>
-                <li class="fragment"> data sent to user $U'$ along with $U$ public key $P$ </li>
-                <li class="fragment"> $U'$ decodes data using $P$ </li></small>
+                    <small><li class="fragment"> data hashed by user $U$ with private key $K$ </li>
+                        <li class="fragment"> data sent to user $U'$ along with $U$ public key $P$ </li>
+                        <li class="fragment"> $U'$ decodes data using $P$ </li></small>
                 </ul>
+
+            </section>
+            <section>
+
+                <p><a href="https://andersbrownworth.com/blockchain/public-private-keys/blockchain">All together now</a></p>
+
+                <small><p><em>[https://andersbrownworth.com/blockchain/public-private-keys/blockchain]</em></p></small>
 
             </section>
             <section>
@@ -213,17 +222,133 @@
                 <h3> Consensus </h3>
 
                 <ul>
-                    <p> The blockchain is made of networked nodes executing the same state machine ($\approx$program) </p>
+                    <p> The blockchain is made of <strong>networked</strong> nodes executing the same <strong>state machine</strong> ($\approx$program) </p>
                     <p class="fragment"> Each node executes the same <a href="https://andersbrownworth.com/blockchain/distributed">consensus protocol</a></p>
-                    <ul class="fragment">
+                    <small><ul class="fragment">
                         <li> all nodes must be initialised with the <em>same initial state</em> </li>
                         <li> inputs must be submitted to all replicas in the <em>same order</em> </li>
-                    </ul>
+                    </ul></small>
                     <p class="fragment"> Consensus guarantees </p>
-                    <ul>
+                    <ul class="fragment">
                         <li> <strong>consistency</strong>: propagation of updates </li>
                         <li> <strong>robustness</strong>: tolerance to nodes' failures </li>
                     </ul>
+                </ul>
+
+            </section>
+            <section>
+
+                <h3> The distributed consensus problem </h3>
+
+                <ul>
+                    <p> <em>Fundamental problem</em> in distributed computing, core to leader election, mutual exclusion, distributed transactions, clock synchronization </p>
+                    <small><ul class="fragment">
+                        <li> each process $p_k$ has an input value $u_k$ </li>
+                        <li> processes exchange inputs so that the outputs of all <strong>non-faulty</strong> processes become same output </li>
+                        <li> output $v$ must be equal to at least one $u_k$ </li>
+                    </ul></small>
+                    <p class="fragment"> Any consensus protocol should guarantee termination, agreement, and validity (if each $u_k = v$ then utput should be $v$) </p>
+                </ul>
+
+            </section>
+            <section>
+
+                <p> <a href="https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf">FLP theorem</a>: </p>
+                <img class="stretch" data-src="res/img/flp.png">
+                <p class="fragment"> <span class="fragment highlight-green">No failures?</span> Easy consensus in any system </p>
+                <p class="fragment"> <span class="fragment highlight-red">Asynchronous network, deterministic algorithms?</span> Consensus impossible if failures! </p>
+
+            </section>
+            <section>
+
+                <h3> <a href="https://dl.acm.org/doi/10.1145/343477.343502">CAP theorem</a> </h3>
+
+                <img class="stretch" data-src="res/img/cap.jpg">
+                <p> For any distributed system, in case of failures (<span class="fragment highlight-red">partitioning</span>) choose amongst <span class="fragment highlight-green">consistency</span> and <span class="fragment highlight-green">availability</span> </p>
+
+            </section>
+            <section>
+
+                <h3> Blockchain vs. FLP & CAP </h3>
+
+                <p> Partitioning is intrinsic to blockchains, availability cannot be lost in many application domains,
+                    consistency is of paramount importance too, but there are ways we can have <em>almost</em> consistency </p>
+                <p class="fragment"> Research in blockchain contributed nice novel mechanisms to have <strong>eventual consistency</strong> (mostly, "Proof-of-<em>whatever</em>" techniques): "<em>sooner or later</em>, <strong>in finite (reasonable) time</strong>, things will become consistent" </p>
+                <!--see slides 39–46 for specific ways to have this-->
+
+            </section>
+            <section>
+
+                <p>Both problems are extremely relevant for blockchains, as its foundation is consistency without centralisation!</p>
+
+                <p><a href="https://andersbrownworth.com/blockchain/distributed">See the problem</a></p>
+
+                <p><a href="https://blockchaindemo.io">See a solution</a></p>
+
+                <small><p><em>[https://andersbrownworth.com/blockchain/distributed]</em></p></small>
+
+                <small><p><em>[https://blockchaindemo.io]</em></p></small>
+
+            </section>
+            <section>
+
+                <h3><em>The</em> blockchain or <em>a</em> blockchain?</h3>
+
+                <ul>
+                    <p>Many factors influence how a blockchain actually work:</p>
+                    <p class="fragment"><strong>Permissioned</strong> vs. <strong>Permissionless</strong></p>
+                    <small><ul class="fragment">
+                        <li> users craft their own id vs. get an id from a certified authority </li>
+                        <li> <a href="">Hyperledger Fabric</a> vs. <a href="">Ethereum</a> </li>
+                    </ul></small>
+                    <p class="fragment">Which consensus?</p>
+                    <small><ul class="fragment">
+                        <li> quorum / leader election based </li>
+                        <li> robust to <span class="fragment highlight-red">Byzantine failures</span> or not </li>
+                        <li> competition-based approaches </li>
+                    </ul></small>
+                    <p class="fragment">Many others to define properties of a <em>specific</em> blockchain</p>
+                </ul>
+
+            </section>
+            <section>
+
+                <h3> Byzantine failures </h3>
+
+                <ul>
+                    <p> Another fundamental problem in distributed computing: achieve system <strong>reliability</strong> in the presence of <strong>faulty processes</strong> </p>
+                    <small><ul class="fragment">
+                        <li> either by mistake (e.g. node crashing, disconnection) </li>
+                        <li> or on purpose (e.g. hostile node) </li>
+                    </ul></small>
+                    <p class="fragment"> Formalised as the <a href="https://dl.acm.org/doi/10.1145/1067629.806523">two generals problem</a>, then <a href="https://dl.acm.org/doi/10.1145/357172.357176">extended for $m \gt 2$</a> </p>
+                </ul>
+
+            </section>
+            <section>
+
+                <img class="stretch" data-src="res/img/2-generals.jpg">
+                <p> <strong>Theorem</strong> proved: for any $m$, consensus achieved if there are more than $3m$ participants with at most $m$ traitors </p>
+
+            </section>
+            <section>
+
+                <h3> Why bother? </h3>
+
+                <ul>
+                    <p> Due to the value of the asset stored in the ledger, <em>hostile actors have economic incentives</em> to, e.g., rewrite blocks </p>
+                    <small><ul class="fragment">
+                        <li> e.g. re-order transactions for double spending </li>
+                        <li> e.g. compromise signatures to steal assets </li>
+                        <li> <em>there is no central authority to recover!</em> </li>
+                    </ul></small>
+                    <p class="fragment"> <strong>Byzantine Fault Tolerance</strong> (BFT) consensus helps against attacks: </p>
+                    <small><ul class="fragment">
+                        <li> (distributed) Denial of Service (<span class="fragment highlight-red">transaction fees</span> help) </li>
+                        <li> sybil attack => impersonate N nodes (consensus help) </li>
+                        <li> eclipse attack => partition network, opens to other attacks (e.g. double-spending) </li>
+                        <li> routing attack => tamper with messages (hash & signatures help) </li>
+                    </ul></small>
                 </ul>
 
             </section>
@@ -231,7 +356,232 @@
         <section data-transition="convex">
             <section data-transition="zoom">
 
-                <h2> How does a blockchain work? </h2>
+                <h2> How does the blockchain work? </h2>
+
+            </section>
+            <section>
+
+                <h3> Blocks lifecycle </h3>
+
+                <ol>
+                    <li> A user issues a transaction </li>
+                    <li class="fragment"> <strong>Signs</strong> it with private key $K$ </li>
+                    <li class="fragment"> Server node propagates the transaction to neighbours </li>
+                    <li class="fragment"> The transaction is <strong>validated</strong> by peers and dropped if invalid </li>
+                    <li class="fragment"> Valid transactions are eventually executed producing a <em>temporary</em> block </li>
+                    <li class="fragment"> Eventually, if the <strong>consensus</strong> protocol confirms the block, it is appended to the blockchain </li>
+                </ol>
+
+            </section>
+            <section>
+
+                <img class="stretch" data-src="res/img/peers.png">
+                <p> <a href="https://blockchaindemo.io/">See it working</a>: <em>[https://blockchaindemo.io/]</em> </p>
+
+            </section>
+            <section>
+
+                <h3> BFT </h3>
+
+                <ul>
+                    <p> When adding a new block, it needs to meet these requirements (at least): </p>
+                    <small><ul>
+                        <li class="fragment"> index = latest block index + 1 </li>
+                        <li class="fragment"> previous hash field = latest block hash field </li>
+                        <li class="fragment"> hash meets difficulty requirement (e.g. no. of leading zeroes) </li>
+                    </ul></small>
+                    <p class="fragment"> Hence, <strong>changing</strong> a committed block leads to a cascade of invalid blocks </p>
+                    <small><ol>
+                        <li class="fragment"> its hash changes </li>
+                        <li class="fragment"> previous hash field of next block changes... </li>
+                        <li class="fragment"> ...hence its own hash changes, and so on! </li>
+                    </ol></small>
+                </ul>
+
+            </section>
+            <section>
+
+                <ul>
+                    <p> An attacker should: </p>
+                    <ul>
+                        <li class="fragment"> alter transactions in one block and re-mine that block </li>
+                        <li class="fragment"> re-mine each subsequent block </li>
+                        <li class="fragment"> do so while impersonating many nodes (consensus!) </li>
+                        <li class="fragment"> do so fast enough to not let the blockchain evolve in the meantime (otherwise, more blocks to re-mine) </li>
+                    </ul>
+                </ul>
+
+            </section>
+            <section>
+
+                <h3> Why be hostile? Why be nice? </h3>
+
+                <p class="fragment grow"> In both cases: <strong>M. O. N. E. Y.</strong></p>
+                <small><ul>
+                    <li class="fragment"> <span class="fragment highlight-red">hostile</span>: assets stored on blockchain have value, hence changing ownership is appealing </li>
+                    <li class="fragment"> <span class="fragment highlight-green">nice</span>: miners are rewarded / compensated for their job, usually with a given
+                        amount of cryptocurrency </li>
+                </ul></small>
+                <p class="fragment"> <em>Setting aside the blockchain from a native cryptocurrency is far from trivial and currently subject of active research!</em> </p>
+                <p class="fragment"> <a href="https://www.youtube.com/watch?v=S00MWI3YeP4">Could be a whole topic on its own...</a> </p>
+
+            </section>
+            <section>
+
+                <p> <a href="https://youtu.be/BuTj9raHQOU">Let's clarify</a> </p>
+                <p> <small><em>[https://youtu.be/BuTj9raHQOU]</em></small> </p>
+
+            </section>
+        </section>
+        <section data-transition="convex">
+            <section data-transition="zoom">
+
+                <h2> Deep dive: Ethereum </h2>
+
+            </section>
+            <section>
+
+                <p> Most of blockchain-related <em>technical</em> literature focus on a <strong>specific implementation</strong> </p>
+                <p class="fragment"> Until now we've been general, now we must choose a reference blockchain </p>
+                <p class="fragment"> <a href="https://gavwood.com/paper.pdf">Ethereum</a>: probably the most mature, studied, and documented blockchain feturing <span class="fragment highlight-red">smart contracts</span> </p>
+
+            </section>
+            <section>
+
+                <p> <em>"[...] alternative protocol for building <strong>decentralized applications</strong> [...]"</em></p>
+                <p> <em>"Ethereum does this by building what is essentially the ultimate abstract foundational
+                    layer: a blockchain with a <strong>built-in Turing-complete programming language</strong>, allowing anyone to
+                    write smart contracts and decentralized applications where they can create their own
+                    arbitrary rules for ownership, transaction formats and state transition functions.</em>" </p>
+
+            </section>
+            <section>
+
+                <p> <em>"Smart contracts, cryptographic 'boxes' that contain value and only unlock it if
+                    certain conditions are met, can also be built on top of the platform, with vastly more
+                    power than that offered by Bitcoin scripting because of the added powers of
+                    Turing-completeness, value-awareness, blockchain-awareness and state."</em> </p>
+
+            </section>
+            <section>
+
+                <h3> Not only users </h3>
+
+                <p> Ethereum admits also smart contracts to issue transactions, besides users </p>
+                <img class="stretch" data-src="res/img/entities.png">
+
+            </section>
+            <section>
+
+                <h3> Transactions </h3>
+
+                <ul>
+                    <li> Value transfers </li>
+                    <li> Deployment of a smart contract (SC) </li>
+                    <li> Invocation of a SC </li>
+                </ul>
+
+                <img class="stretch" data-src="res/img/transactions.png">
+
+            </section>
+            <section>
+
+                <h3> Consensus </h3>
+
+                <ul>
+                    <li> Agreement on starting state </li>
+                    <sli> Agreement on ordering of input transactions </sli>
+                    <li> Tolerant to Byzantine failures: <strong>Proof-of-Work</strong> (PoW) </li>
+                </ul>
+
+            </section>
+            <section>
+
+                <h3> PoW </h3>
+
+                <ul>
+                    <p> The first miner to find the nonce of a block propagates its proof and, if confirmed by others,
+                        gets the right to publish the new block and a <strong>reward</strong> (a transaction fee charged on the issuer) </p>
+                    <p class="fragment"> The specific protocol is <a href="https://link.springer.com/chapter/10.1007/978-3-662-47854-7_32">GHOST</a>, which provides <strong>probabilistic eventual consistency</strong> </p>
+                    <small><ul class="fragment">
+                        <li> inconsistencies can temporarily arise in the form of "forks" </li>
+                        <li> the protocol takes care of making one <em>eventually prevail</em> on the others </li>
+                        <li> <strong>probability</strong> of block $B$ to be inconsistent $\rightarrow 0$ exponentially with the amount $N$ of blocks after $B$ (confirmations) </li>
+                    </ul></small>
+                </ul>
+
+            </section>
+            <section>
+
+                <h3> Forks </h3>
+
+                <ul>
+                    <p> Common in blockchains since they run <em>asynchronously</em>: network delays => peers may see different blocks seemingly mined at same time, or same block at different times </p>
+                    <p class="fragment"> <strong>Probability</strong> that two distinct sub-nets find blocks $\approx$simultaneously vanishes with the length of the chain </p>
+                    <p class="fragment"> If an hostile sub-net create blocks <strong>faster</strong> than the nice one, <em>it can rewrite history</em> to overtake the honest chain </p>
+                    <p class="fragment"> Faster $\approx$ hostile sub-net is "bigger" (in computatinal terms) </p>
+                </ul>
+
+            </section>
+            <section>
+
+                <img class="stretch" data-src="res/img/pow.png">
+
+            </section>
+        </section>
+        <section data-transition="convex">
+            <section data-transition="zoom">
+
+                <h2> Deep dive: smart contracts </h2>
+
+            </section>
+            <section>
+
+                <ul>
+                    <p> Smart contracts are <strong>arbitrary computations</strong> executed <em>on the blockchain</em> </p>
+                    <small><ul>
+                        <li class="fragment"> <strong>stateful</strong>: encapsulate their own state </li>
+                        <li class="fragment"> <strong>user-defined</strong>: any user may publish a smart contract </li>
+                        <li class="fragment"> <strong>reactive</strong>: only activate on external input (transactions) </li>
+                        <li class="fragment"> <strong>immutable</strong>: smart contracts code cannot change </li>
+                        <li class="fragment"> <strong>secured</strong>: cryptographic measures as for blocks and transactions </li>
+                        <li class="fragment"> <strong>deterministic</strong>: always same outputs if given the same inputs and state </li>
+                        <li class="fragment"> <strong>decentralised</strong>: no centralised coordinator, concurrent execution </li>
+                    </ul></small>
+                </ul>
+
+            </section>
+            <section>
+
+                <h3> <a href="https://dl.acm.org/doi/10.1145/98163.98167">State machine replication</a> (SMR) </h3>
+
+                <p> Each node in the blockchain network should behave the same, according to the protocol => each node executes the same "program" (<em>the "blockchain application"</em>) </p>
+                <p class="fragment"> <span class="fragment highlight-red"> What if we replicate a program implementing an <em>intepreter for other programs? </em></span> </p>
+
+            </section>
+            <section>
+
+                <p> Each node of the blockchain executes arbitrary programs published through the blockchain API => <strong>Universal SMR</strong> </p>
+                <p class="fragment grow"> <em>The blockchain becomes sort of middleware for decentralised computations!</em> </p>
+
+            </section>
+            <section>
+
+                <h3> SC lifecycle </h3>
+
+                <ul>
+                    <p> Deployment stage: </p>
+                    <small><ul>
+                        <li class="fragment"> user instantiates a SC by publishing its source/byte-code (deployment transaction) </li>
+                        <li class="fragment"> once transaction confirmed, the SC instance is running on all blockchain nodes (replicas) </li>
+                    </ul></small>
+                    <p class="fragment"> Invocation stage: </p>
+                    <small><ul>
+                        <li class="fragment"> users trigger SC with invocation transactions (and providing input) </li>
+                        <li class="fragment"> <strong>eventually</strong>, each replica receives the transaction and executes it </li>
+                        <li class="fragment"> a new block with the SC output is <strong>eventually</strong> confirmed by the consensus protocol (hence committed) </li>
+                    </ul></small>
+                </ul>
 
             </section>
         </section>
