@@ -26,13 +26,13 @@ The course is 12 hours (3 ETCS) long and is scheduled for mid October 2020, exac
 
 # Material
 
-Link to the whole slides, *interactive version* (navigation buttons at bottom-right): https://s-mariani.github.io/reveal.js/
- - direct link to the first part (autonomous systems): https://s-mariani.github.io/reveal.js/index-autonomous.html
- - direct link to the second part (blockchain): https://s-mariani.github.io/reveal.js/index-blockchain.html
+Link to the whole slides, *interactive version* (navigation buttons at bottom-right): https://smarianimore.github.io/phdcourse-2020/
+ - direct link to the first part (autonomous systems): https://smarianimore.github.io/phdcourse-2020/index-autonomous.html
+ - direct link to the second part (blockchain): https://smarianimore.github.io/phdcourse-2020/index-blockchain.html
  
-Link to the whole slides, *pdf version*: https://s-mariani.github.io/reveal.js/?print-pdf/
- - direct link to the first part (autonomous systems): https://s-mariani.github.io/reveal.js/index-autonomous.html?print-pdf/
- - direct link to the second part (blockchain): https://s-mariani.github.io/reveal.js/index-blockchain.html?print-pdf/
+Link to the whole slides, *pdf version*: https://smarianimore.github.io/phdcourse-2020/?print-pdf/
+ - direct link to the first part (autonomous systems): https://smarianimore.github.io/phdcourse-2020/index-autonomous.html?print-pdf/
+ - direct link to the second part (blockchain): https://smarianimore.github.io/phdcourse-2020/index-blockchain.html?print-pdf/
  
 Links to code examples:
  - TBD
