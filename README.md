@@ -4,15 +4,15 @@ Home page for the PhD course "Emerging IT technologies: Autonomous Systems and B
 
 # Syllabus
 
-The [course](https://s-mariani.github.io/reveal.js/) is divided in two parts:
- - [Autonomous systems: an overview](https://s-mariani.github.io/reveal.js/index-autonomous.html)
+The [course](https://smarianimore.github.io/phdcourse-2020/) is divided in two parts:
+ - [Autonomous systems: an overview](https://smarianimore.github.io/phdcourse-2020/index-autonomous.html)
    - On the notion of autonomy
    - Agents
    - Multiagent systems
    - Game theory: individual stance
    - Game theory: collective stance
    - Multiagent interactions
- - [Blockchain: an overview](https://s-mariani.github.io/reveal.js/index-blockchain.html)
+ - [Blockchain: an overview](https://smarianimore.github.io/phdcourse-2020/index-blockchain.html)
    - Why
    - What
    - How
