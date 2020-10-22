@@ -35,4 +35,4 @@ Link to the whole slides, *pdf version*: https://smarianimore.github.io/phdcours
  - direct link to the second part (blockchain): https://smarianimore.github.io/phdcourse-2020/index-blockchain.html?print-pdf/
  
 Links to code examples:
- - TBD
+ - [JADE examples](https://github.com/smarianimore/phdcourse-2020-jade)
