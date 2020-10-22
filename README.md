@@ -36,3 +36,4 @@ Link to the whole slides, *pdf version*: https://smarianimore.github.io/phdcours
  
 Links to code examples:
  - [JADE examples](https://github.com/smarianimore/phdcourse-2020-jade)
+ - [Jason example](https://gitlab.com/pika-lab/courses/as/ay1920/jason-agents) (kindly provided by [Giovanni Ciatto](https://about.me/gciatto))
