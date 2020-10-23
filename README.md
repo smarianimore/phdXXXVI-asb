@@ -12,13 +12,14 @@ The [course](https://smarianimore.github.io/phdcourse-2020/) is divided in two p
    - Game theory: individual stance
    - Game theory: collective stance
    - Multiagent interactions
+   - Conclusion
  - [Blockchain: an overview](https://smarianimore.github.io/phdcourse-2020/index-blockchain.html)
    - Why
    - What
    - How
    - Deep dive: Ethereum
    - Deep dive: smart contracts
-   - Autonomy, too?
+   - Conclusion
 
 # Organisation
 
@@ -37,3 +38,4 @@ Link to the whole slides, *pdf version*: https://smarianimore.github.io/phdcours
 Links to code examples:
  - [JADE examples](https://github.com/smarianimore/phdcourse-2020-jade)
  - [Jason example](https://gitlab.com/pika-lab/courses/as/ay1920/jason-agents) (kindly provided by [Giovanni Ciatto](https://about.me/gciatto))
+ - [TuCSoN example](https://gitlab.com/pika-lab/courses/ds/aa1920/lab-02) (kindly provided by [Giovanni Ciatto](https://about.me/gciatto))
