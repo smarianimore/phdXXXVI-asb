@@ -36,11 +36,11 @@ Due to ongoing spread of COVID-19, the course will be delivered remotely, as **l
 
 # Material
 
-Link to the whole slides, *interactive version* (navigation buttons at bottom-right): https://smarianimore.github.io/phdcourse-2020/
+Link to the course overview slides, *interactive version* (navigation buttons at bottom-right): https://smarianimore.github.io/phdcourse-2020/
  - direct link to the first part (autonomous systems): https://smarianimore.github.io/phdcourse-2020/index-autonomous.html
  - direct link to the second part (blockchain): https://smarianimore.github.io/phdcourse-2020/index-blockchain.html
  
-Link to the whole slides, *pdf version*: https://smarianimore.github.io/phdcourse-2020/?print-pdf/
+Link to the course overview slides, *pdf version*: https://smarianimore.github.io/phdcourse-2020/?print-pdf/
  - direct link to the first part (autonomous systems): https://smarianimore.github.io/phdcourse-2020/index-autonomous.html?print-pdf/
  - direct link to the second part (blockchain): https://smarianimore.github.io/phdcourse-2020/index-blockchain.html?print-pdf/
  
