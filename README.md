@@ -23,7 +23,16 @@ The [course](https://smarianimore.github.io/phdcourse-2020/) is divided in two p
 
 # Organisation
 
-The course is 12 hours (3 ETCS) long and is scheduled for mid October 2020, exact dates TBA (most probabably 3 days 4 hours each in 3rd week)
+The course is 12 hours (3 ETCS) long and is scheduled for early December 2020:
+ - Tuesday   **1/12/2020**, 9am - 1pm
+ - Wednesday **2/12/2020**, 9am - 1pm
+ - Thursday  **3/12/2020**, 9am - 1pm
+
+Due to ongoing spread of COVID-19, the course will be delivered remotely, as **livestreaming interactive sessions** on MS Teams:
+ - team name: phdXXXVI-asb
+ - team link: [here](https://teams.microsoft.com/l/team/19%3ac76066c0f7344388b00df7f161d3672d%40thread.tacv2/conversations?groupId=ae3b68dc-aaec-40f0-ba97-55615d2d1ab8&tenantId=e787b025-3fc6-4802-874a-9c988768f892)
+ - team code: vhmk0v7
+(in case of any problems with MS Teams [contact me](mailto:stefano.mariani@unimore.it))
 
 # Material
 
