@@ -82,6 +82,7 @@ The pool of eligible questions is as follows:
  - According to CAP theorem, which are the two properties you have to choose amongst in case of network partitions?
  - What is eventual consistency?
  - What is a Byzantine failure?
+
 **Open questions**
  - What is the intentional stance?
  - What does Newell's principle of rationality say?
