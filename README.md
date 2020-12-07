@@ -48,3 +48,47 @@ Links to code examples:
  - [JADE examples](https://github.com/smarianimore/phdcourse-2020-jade)
  - [Jason example](https://gitlab.com/pika-lab/courses/as/ay1920/jason-agents) (kindly provided by [Giovanni Ciatto](https://about.me/gciatto))
  - [TuCSoN example](https://gitlab.com/pika-lab/courses/ds/aa1920/lab-02) (kindly provided by [Giovanni Ciatto](https://about.me/gciatto))
+
+# Exam: quiz
+
+Students enrolled in the course can choose to take the final examination as a quiz.
+The quiz will feature **10 questions, 8 in multiple choice form, 2 in open answer** form, to be answered in **30 minutes**.
+The quiz yields "success/failure", no numeric score.
+*To succeed, students need to correctly answer 4 multiple choices and 1 open answer.*
+
+Due to the ongoing COVID-19 situation, the quiz will be held **remotely**.
+*The exact means and procedure will be communicated as soon as possible.*
+
+The pool of eligible questions is as follows:
+
+**Multiple choice**
+ - Which are the core features defining a software agent?
+ - What is theoretical reasoning?
+ - What is practical reasoning?
+ - Which are the abstractions of the BDI model?
+ - Which are the most common agent architectures?
+ - Which are the properties that adaptiveness brings to a system?
+ - What is a dominant strategy?
+ - What are zero-sum games?
+ - What is Nash equilibrium?
+ - Which are the forms of interaction in a multiagent system?
+ - Which are the types of interaction in a multiagent system?
+ - What is the core mechanism that makes tuple spaces suitable for coordinating interactions?
+ - Which are the existing technologies cleverly combined by the blockchain?
+ - What does it mean to mine blocks?
+ - Which properties should a digital signature guarantee?
+ - Which properties should consensus guarantee?
+ - According to FLP theorem, which are the two properties you have to choose amongst in case of failures?
+ - According to CAP theorem, which are the two properties you have to choose amongst in case of network partitions?
+ - What is eventual consistency?
+ - What is a Byzantine failure?
+**Open questions**
+ - What is the intentional stance?
+ - What does Newell's principle of rationality say?
+ - What is adaptiveness?
+ - What is a multiagent system?
+ - What is game theory in a nutshell?
+ - What is an interaction protocol?
+ - What are the differences between ContractNet and auctions?
+ - What is the problem of distributed consensus?
+ - What is the typical lifecycle of a block (6 steps)
