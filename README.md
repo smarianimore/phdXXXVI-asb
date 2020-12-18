@@ -57,7 +57,14 @@ The quiz yields "success/failure", no numeric score.
 *To succeed, students need to correctly answer 4 multiple choices and 1 open answer.*
 
 Due to the ongoing COVID-19 situation, the quiz will be held **remotely**.
-*The exact means and procedure will be communicated as soon as possible.*
+Accordingly, we will use two tools:
+ 1. our MS Teams team for a live confernce call during which you MUST keep the mic active, the webcam active, and share your WHOLE screen
+ 2. the "Quiz" tool of the "Dolly" platform that I normally use for my other teaching duties
+Regarding point 2, if you go to page [https://dolly.ingre.unimore.it/2020/course/view.php?id=132](https://dolly.ingre.unimore.it/2020/course/view.php?id=132) you should:
+ - be able to "enroll" as guest by using password "Goedel"
+ - see an empty section called "[phdXXXVI-asb] Emerging IT technologies: Autonomous Systems and Blockchains" right below the course forums
+Please, **if this is not the case**, [contact me](mailto:stefano.mariani@unimore.it) asap!
+In that empty section will appear the actual quiz when due.
 
 The pool of eligible questions is as follows:
 
