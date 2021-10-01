@@ -63,7 +63,7 @@ Accordingly, we will use two tools:
 
 Regarding point 2, if you go to page [https://dolly.ingre.unimore.it/2020/course/view.php?id=132](https://dolly.ingre.unimore.it/2020/course/view.php?id=132) you should:
  - be able to "enroll" as guest by using password "Goedel"
- - see an empty section called "[phdXXXVI-asb] Emerging IT technologies: Autonomous Systems and Blockchains" right below the course forums
+ - see an empty section called "[phdXXXVI-asb] Emerging IT technologies: Autonomous Systems and Blockchains" at the very bottom of the page
 
 Please, **if this is not the case**, [contact me](mailto:stefano.mariani@unimore.it) asap!
 In that empty section will appear the actual quiz when due.
