@@ -102,3 +102,4 @@ The pool of eligible questions is as follows:
  - What are the differences between ContractNet and auctions?
  - What is the problem of distributed consensus?
  - What is the typical lifecycle of a block (6 steps)
+
