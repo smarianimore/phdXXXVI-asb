@@ -1,10 +1,10 @@
 # Emerging IT technologies: Autonomous Systems and Blockchains
 
-Home page for the PhD course "Emerging IT technologies: Autonomous Systems and Blockchains" of the **XXXVI Cycle** of the **Doctorate School in Industrial Innovation Engineering**, **University of Modena and Reggio Emilia**.
+Home page for the PhD course "Emerging IT technologies: Autonomous Systems and Blockchains" of the **XXXVI, XXXVII, and XXXVIII Cycles** of the **Doctorate School in Industrial Innovation Engineering**, **University of Modena and Reggio Emilia**.
 
 # Syllabus
 
-The [course](https://smarianimore.github.io/phdcourse-2020/) is divided in two parts:
+The [course](https://smarianimore.github.io/phdcourse-2020/) is divided in two lectures:
  - [Autonomous systems: an overview](https://smarianimore.github.io/phdcourse-2020/index-autonomous.html)
    - On the notion of autonomy
    - Agents
@@ -23,12 +23,15 @@ The [course](https://smarianimore.github.io/phdcourse-2020/) is divided in two p
 
 # Organisation
 
-The course is 12 hours (3 ETCS) long and is scheduled for early December 2020:
- - Tuesday   **1/12/2020**, 9am - 1pm
- - Wednesday **2/12/2020**, 9am - 1pm
- - Thursday  **3/12/2020**, 9am - 1pm
+The course is 8 hours (2 ETCS) long and is scheduled for late October 2023:
+ - Monday   **23/10/2023**, 9am - 1pm
+ - Thursday  **26/10/2023**, 1pm - 5pm
 
-Due to ongoing spread of COVID-19, the course will be delivered remotely, as **livestreaming interactive sessions** on MS Teams:
+Lectures will be at the [Buccola-Bisi Pavillion in the San Lazzaro Campus of Reggio Emilia](https://maps.app.goo.gl/B7RUghyqtGYQMbc69):
+ - Monday   room F1.4
+ - Thursday   room F1.3
+
+Remote participation can be requested to the teacher and will be granted on a discretional basis as **livestreaming interactive sessions** on MS Teams:
  - team name: phdXXXVI-asb
  - team link: [here](https://teams.microsoft.com/l/team/19%3ac76066c0f7344388b00df7f161d3672d%40thread.tacv2/conversations?groupId=ae3b68dc-aaec-40f0-ba97-55615d2d1ab8&tenantId=e787b025-3fc6-4802-874a-9c988768f892)
  - team code: vhmk0v7
@@ -36,11 +39,11 @@ Due to ongoing spread of COVID-19, the course will be delivered remotely, as **l
 
 # Material
 
-Link to the course overview slides, *interactive version* (navigation buttons at bottom-right): https://smarianimore.github.io/phdcourse-2020/
+Link to the course slides, *interactive version* (navigation buttons at bottom-right): https://smarianimore.github.io/phdcourse-2020/
  - direct link to the first part (autonomous systems): https://smarianimore.github.io/phdcourse-2020/index-autonomous.html
  - direct link to the second part (blockchain): https://smarianimore.github.io/phdcourse-2020/index-blockchain.html
  
-Link to the course overview slides, *pdf version*: https://smarianimore.github.io/phdcourse-2020/?print-pdf/
+Link to the course slides, *pdf version*: https://smarianimore.github.io/phdcourse-2020/?print-pdf/
  - direct link to the first part (autonomous systems): https://smarianimore.github.io/phdcourse-2020/index-autonomous.html?print-pdf/
  - direct link to the second part (blockchain): https://smarianimore.github.io/phdcourse-2020/index-blockchain.html?print-pdf/
  
@@ -55,18 +58,6 @@ Students enrolled in the course can choose to take the final examination as a qu
 The quiz will feature **10 questions, 8 in multiple choice form, 2 in open answer** form, to be answered in **30 minutes**.
 The quiz yields "success/failure", no numeric score.
 *To succeed, students need to correctly answer 4 multiple choices and 1 open answer.*
-
-Due to the ongoing COVID-19 situation, the quiz will be held **remotely**.
-Accordingly, we will use two tools:
- 1. our MS Teams team for a live confernce call during which you MUST keep the mic active, the webcam active, and share your WHOLE screen
- 2. the "Quiz" tool of the "Dolly" platform that I normally use for my other teaching duties
-
-Regarding point 2, if you go to page [https://dolly.ingre.unimore.it/2020/course/view.php?id=132](https://dolly.ingre.unimore.it/2020/course/view.php?id=132) you should:
- - be able to "enroll" as guest by using password "Goedel"
- - see an empty section called "[phdXXXVI-asb] Emerging IT technologies: Autonomous Systems and Blockchains" at the very bottom of the page
-
-Please, **if this is not the case**, [contact me](mailto:stefano.mariani@unimore.it) asap!
-In that empty section will appear the actual quiz when due.
 
 The pool of eligible questions is as follows:
 
@@ -102,4 +93,3 @@ The pool of eligible questions is as follows:
  - What are the differences between ContractNet and auctions?
  - What is the problem of distributed consensus?
  - What is the typical lifecycle of a block (6 steps)
-
