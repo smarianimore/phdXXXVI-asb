@@ -4,7 +4,7 @@ Home page for the PhD course "Emerging IT technologies: Autonomous Systems and B
 
 # Syllabus
 
-The [course](https://smarianimore.github.io/phdcourse-2020/) is divided in two lectures:
+The [course](https://smarianimore.github.io/phdXXXVI-asb/) is divided in two lectures:
  - [Autonomous systems: an overview](https://smarianimore.github.io/phdcourse-2020/index-autonomous.html)
    - On the notion of autonomy
    - Agents
